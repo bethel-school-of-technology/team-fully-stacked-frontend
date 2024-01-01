@@ -147,9 +147,10 @@ export class FormService implements OnInit {
       setTimeout(() => {
         this.activeStepSubject.next(1); this.router.navigate(['signin']);
       }, 4000);
-    } else {
+    } 
+    else {
       // Change this to route to workouts/this.UserId
-      this.router.navigateByUrl(`/test`);
+      this.router.navigateByUrl(`/content${this.UserId}`);
     }
 
   }

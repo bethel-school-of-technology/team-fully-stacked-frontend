@@ -19,7 +19,7 @@ export class SignInComponent implements OnInit {
  ngOnInit(): void {
   if(localStorage.getItem('userSignedIn'))
  {
-  this.router.navigateByUrl(`/test`);
+  this.router.navigateByUrl(`/signin`);
  } 
  }
 
@@ -31,7 +31,7 @@ export class SignInComponent implements OnInit {
 
        this.router.navigateByUrl(`/content/${userId}`);
 
-      // this.router.navigateByUrl(`/test`);
+      // this.router.navigateByUrl(`/content`);
 
    }, error => {
        console.log('Error: ', error);
