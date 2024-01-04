@@ -150,11 +150,9 @@ export class FormService implements OnInit {
     } 
     else {
       // Change this to route to workouts/this.UserId
-<<<<<<< HEAD
+
       this.router.navigateByUrl(`/content${this.UserId}`);
-=======
-      this.router.navigateByUrl(`/content/${this.UserId}`);
->>>>>>> 97ad9aa0474869bce9e5c1564648bcdfe14561a3
+
     }
 
   }

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class PaymentService {
 
   baseURL: string = "http://localhost:3000/api/payment"
-  tokenKey: string = "myVideoToken";
+  tokenKey: string = "token";
 
   constructor(private http: HttpClient) { }
 
