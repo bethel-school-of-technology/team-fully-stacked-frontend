@@ -11,7 +11,7 @@ import { ContentComponent } from './components/content/content.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CreateProfileComponent } from './components/create-profile/create-profile.component';
+
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
@@ -46,7 +46,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductComponent } from './components/product/product.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-import { ContentStyledComponent } from './components/content-styled/content-styled.component';
+
 import { StepTrackerIconsUpgradeComponent } from './other-components/step-nav-upgrade/step-tracker-icons-upgrade.component';
 import { AuthGuard } from './auth.guard';
 
@@ -61,7 +61,7 @@ import { AuthGuard } from './auth.guard';
     ContactComponent,
     ContentComponent,
     ProfileComponent,
-    CreateProfileComponent,
+    
     EditProfileComponent,
     NotFoundComponent,
     SignInComponent,
@@ -83,7 +83,7 @@ import { AuthGuard } from './auth.guard';
       ProductComponent,
       CheckoutComponent,
 
-    ContentStyledComponent,
+   
     StepTrackerIconsUpgradeComponent,
   
 

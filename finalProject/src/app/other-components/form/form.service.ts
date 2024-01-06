@@ -80,24 +80,25 @@ export class FormService implements OnInit {
     if (!localStorage.getItem('userId')) {
       const userData = {
         // remove generated UsesrId when added to backend
-        userId: generatedUserId,
+        //userId: generatedUserId,
         name: userInfo.name,
         password: userInfo.password,
         email: userInfo.email,
         tier: planInfo.plan,
         paymentFrequency: planInfo.billing,
-        price: planInfo.totalCost
+        price: planInfo.totalCost,
+        paymentType: type
       }
       this.user.signUp(userData).subscribe(() => {
       });
-      const planData = {
-        tier: planInfo.plan,
-        paymentFrequency: planInfo.billing,
-        price: planInfo.totalCost,
-        purchaseType: type
-      }
-      this.payment.newPayment(planData).subscribe(() => {
-      });
+      // const planData = {
+      //   tier: planInfo.plan,
+      //   paymentFrequency: planInfo.billing,
+      //   price: planInfo.totalCost,
+      //   purchaseType: type
+      // }
+      // this.payment.newPayment(planData).subscribe(() => {
+      // });
     }
     else {
       this.UserId = this.user.getUserId() ?? "";

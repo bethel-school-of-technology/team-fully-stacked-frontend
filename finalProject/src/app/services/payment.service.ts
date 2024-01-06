@@ -21,7 +21,7 @@ export class PaymentService {
     let reqHeaders = {
       Authorization: `Bearer ${localStorage.getItem(this.tokenKey)}`
     }
-    return this.http.put<Payment>(`${this.baseURL}/:paymentId`, updatedPayment);
+    return this.http.put<Payment>(`${this.baseURL}/${updatedPayment.paymentId}`, updatedPayment);
   }
 
   getPaymentById(paymentId: string): Observable<Payment> {

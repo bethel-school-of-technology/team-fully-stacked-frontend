@@ -90,6 +90,7 @@ export class AppComponent implements OnInit {
   logOut() {
     this.userService.logoutUser();
     this.UpdateStatus();
+    
   }
 
 
